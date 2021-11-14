@@ -517,4 +517,25 @@ button, button:focus {
 .footer__navigation .separator {
   border-bottom: 0.5px solid #ECECEC;
   margin: 26px 0;
+}
+.footer__navigation > .row:first-child a {
+  font-weight: 700;
+  font-size: 17px;
+}
+.footer__navigation ul li a {
+  font-weight: 400;
+  font-size: 13px;
+}
+.footer__navigation ul li:first-child a {
+  font-weight: 600;
+  font-size: 15px;
+}
+.footer__navigation a:hover {
+  color: rgba(44, 52, 62, 0.97);
+}
+.footer__navigation .content .social-icons svg {
+  fill: #FFFFFF;
+}
+.footer__navigation .content .social-icons svg:hover {
+  fill: #2C343E;
 }/*# sourceMappingURL=app.css.map */

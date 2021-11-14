@@ -10,5 +10,42 @@
       border-bottom: 0.5px solid #ECECEC;
       margin: 26px 0;
     }
+
+    > .row:first-child a {
+      font-weight: $bold;
+      font-size: 17px;
+    }
+
+    ul {
+      li {
+        a {
+          font-weight: $light;
+          font-size: 13px;
+        }
+
+        &:first-child {
+          a {
+            font-weight: $normal;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    a:hover {
+      color: rgba(44, 52, 62, 0.97);
+    }
+
+    .content {
+      .social-icons {
+        svg {
+          fill: $white;
+
+          &:hover {
+            fill: #2C343E;
+          }
+        }
+      }
+    }
   }
 }
