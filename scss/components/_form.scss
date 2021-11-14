@@ -1,3 +1,4 @@
+// button component
 .button {
   &__round {
     border-radius: $form-round;
@@ -7,6 +8,7 @@
   }
 }
 
+// input component
 .input {
   &__round {
     border-radius: $form-round;

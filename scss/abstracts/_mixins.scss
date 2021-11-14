@@ -2,6 +2,13 @@
 @mixin top-header-font {
   font-family: $main-font;
   font-size: $small-fs;
-  color: $white;
   font-weight: $light;
+}
+
+// header navigation font
+@mixin header-nav-font {
+  font-family: $main-font;
+  font-size: $normal-fs;
+  font-weight: $bold;
+  line-height: 17px;
 }

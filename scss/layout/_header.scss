@@ -1,6 +1,7 @@
 .header {
   height: 280px;
   background: $blue-gradient;
+  color: $white;
 
   // top section styles
   &__top {
@@ -54,6 +55,54 @@
         button {
           right: 0;
           top: 0;
+        }
+      }
+    }
+  }
+
+  // header navigation styles
+  &__nav {
+    ul {
+      li {
+        a {
+          padding: 0 33px;
+          @include header-nav-font;
+
+          span {
+            position: relative;
+
+            &::after {
+              content: '';
+              display: inline-block;
+              width: 100%;
+              height: 1px;
+              background-color: $white;
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 0;
+              transition: width .3s;
+            }
+          }
+
+          &.active, &:hover {
+            span {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
         }
       }
     }
