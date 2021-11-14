@@ -11,6 +11,10 @@
   &__subscription {
     @include create-button($form-primary, #3A84CE, 46px, 89px, $smaller-fs, $normal, $white);
   }
+
+  &__buy {
+    @include create-button($form-primary, #3A84CE, 46px, 49px, inherit, inherit, inherit);
+  }
 }
 
 // input component

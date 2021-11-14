@@ -137,4 +137,112 @@
       }
     }
   }
+
+  // new product card component
+  &__newProduct {
+    height: 302px;
+    border-radius: 4px;
+    background-color: $normal;
+    border: 1px solid #F1F1F1;
+    font-family: $main-font;
+    padding: 28px 23px 0 22px;
+    margin-bottom: 20px;
+
+    &--img {
+      text-align: center;
+    }
+
+    &--title {
+      font-weight: $light;
+      font-size: 17px;
+      color: rgba(44, 52, 62, 0.97);
+    }
+
+    &--description {
+      font-family: $main-font;
+      font-weight: $light;
+      font-size: 12px;
+      line-height: 14px;
+      color: #656667;
+    }
+
+    &--category {
+      font-family: $main-font;
+      font-weight: $light;
+      font-size: 10px;
+      line-height: 16px;
+      color: rgba(111, 118, 124, 0.97);
+    }
+
+    &--buy {
+      height: 46px;
+      width: 100%;
+      background: rgba(241, 241, 241, 0.3);
+      border-radius: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-left: 21px;
+
+      .price {
+        &__current {
+          font-family: $main-font;
+          font-weight: $bold;
+          font-size: 20px;
+          line-height: 46px;
+          color: rgba(44, 52, 62, 0.97);
+        }
+
+        &__previous {
+          font-family: $main-font;
+          font-weight: $light;
+          font-size: 13px;
+          line-height: 46px;
+          color: rgba(44, 52, 62, 0.97);
+          opacity: 0.7;
+        }
+      }
+
+      .button {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &--options {
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 14px 0 12px;
+
+      .discount-percent {
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 49px;
+          width: 32px;
+          background-image: url(./../../assets/icons/discount-percent.svg);
+          background-repeat: no-repeat;
+          font-family: $main-font;
+          font-weight: $light;
+          font-size: 12px;
+          line-height: 27px;
+          color: $white;
+        }
+      }
+
+      .like {
+        button {
+          img {
+            width: 19px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -21,6 +21,7 @@ input, input:focus,
 button, button:focus {
   outline: none;
   border: none;
+  background-color: transparent;
 }
 
 @font-face {
@@ -61,6 +62,16 @@ button, button:focus {
   font-size: 0.938rem;
   font-weight: 600;
   color: #FFFFFF;
+}
+.button__buy {
+  border-radius: 4px;
+  background-color: #3A84CE;
+  height: 46px;
+  width: 49px;
+  font-family: "Gilroy", sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 
 .input__round {
@@ -206,6 +217,93 @@ button, button:focus {
 }
 .card__specialProduct > div:hover div img {
   transform: scale(1.1);
+}
+.card__newProduct {
+  height: 302px;
+  border-radius: 4px;
+  background-color: 600;
+  border: 1px solid #F1F1F1;
+  font-family: "Gilroy", sans-serif;
+  padding: 28px 23px 0 22px;
+  margin-bottom: 20px;
+}
+.card__newProduct--img {
+  text-align: center;
+}
+.card__newProduct--title {
+  font-weight: 400;
+  font-size: 17px;
+  color: rgba(44, 52, 62, 0.97);
+}
+.card__newProduct--description {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #656667;
+}
+.card__newProduct--category {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: rgba(111, 118, 124, 0.97);
+}
+.card__newProduct--buy {
+  height: 46px;
+  width: 100%;
+  background: rgba(241, 241, 241, 0.3);
+  border-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 21px;
+}
+.card__newProduct--buy .price__current {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 46px;
+  color: rgba(44, 52, 62, 0.97);
+}
+.card__newProduct--buy .price__previous {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 46px;
+  color: rgba(44, 52, 62, 0.97);
+  opacity: 0.7;
+}
+.card__newProduct--buy .button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card__newProduct--options {
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 14px 0 12px;
+}
+.card__newProduct--options .discount-percent span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  width: 32px;
+  background-image: url(./../../assets/icons/discount-percent.svg);
+  background-repeat: no-repeat;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.card__newProduct--options .like button img {
+  width: 19px;
+  height: 16px;
 }
 
 .title {
