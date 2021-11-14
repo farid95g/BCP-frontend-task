@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- bootstrap cdn -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
 
   <!-- css file -->
   <link rel="stylesheet" href="scss/app.css" />
   <title>Document</title>
 </head>
+
 <body>
   <!-- header -->
   <header class="header">
+    <!-- header top section -->
     <div class="header__top">
       <div class="row h-100">
         <div class="col-12 d-flex justify-content-end">
-          <ul class="list-unstyled d-flex">
+          <ul class="list-unstyled d-flex wrapper">
             <li>
               <a href="#">Çatdırılma</a>
             </li>
@@ -34,7 +38,45 @@
         </div>
       </div>
     </div>
+    <!-- header top section -->
+
+    <!-- header logo and search -->
+    <div class="header__search wrapper">
+      <div class="row">
+        <div class="col-xl-3">
+          <!-- logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="boya.az logo" />
+            </a>
+          </div>
+          <!-- logo -->
+        </div>
+
+        <div class="col-xl-9">
+          <!-- search -->
+          <div class="search h-100">
+            <div class="h-100">
+              <div class="search__input position-relative h-100">
+                <div class="input h-100 w-100">
+                  <input type="search" class="input__round">
+                </div>
+                
+                <img src="assets/icons/search.svg" alt="search" class="position-absolute" />
+                
+                <div class="button">
+                  <button class="button__round position-absolute">Axtar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- search -->
+        </div>
+      </div>
+    </div>
+    <!-- header logo and search -->
   </header>
   <!-- header -->
 </body>
+
 </html>

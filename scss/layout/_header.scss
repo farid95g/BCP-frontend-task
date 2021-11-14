@@ -1,4 +1,8 @@
 .header {
+  height: 280px;
+  background: $blue-gradient;
+
+  // top section styles
   &__top {
     height: 54px;
     background-color: $blue;
@@ -25,6 +29,31 @@
           a {
             padding-right: 0;
           }
+        }
+      }
+    }
+  }
+
+  // logo and search section styles
+  &__search {
+    margin: 30px 0;
+
+    .search {
+      &__input {
+        input {
+          background-color: $light-blue;
+          text-indent: 3.25rem;
+        }
+
+        img {
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        button {
+          right: 0;
+          top: 0;
         }
       }
     }

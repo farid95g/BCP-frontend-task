@@ -1,6 +1,8 @@
 // colors
 $blue: #2F75C1;
 $white: #FFFFFF;
+$blue-gradient: linear-gradient(101.48deg, #2D6DB7 -10.82%, #338CDB 79.4%, rgba(53, 149, 229, 0.87) 97.59%);
+$light-blue: rgba(173, 205, 236, 0.3);
 
 // fonts
 $main-font: "Gilroy", sans-serif;
@@ -10,3 +12,9 @@ $small-fs: .938rem;
 
 // font weights
 $light: 400;
+
+// spacing
+$header-padding: 100px;
+
+// border radiuses
+$form-round: 67px;

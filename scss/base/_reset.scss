@@ -14,3 +14,10 @@ a, a:hover {
   text-decoration: none !important;
   color: inherit;
 }
+
+// removing outline from form elements
+input, input:focus,
+button, button:focus {
+  outline: none;
+  border: none;
+}
