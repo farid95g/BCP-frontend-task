@@ -1,0 +1,14 @@
+.footer {
+  background: $blue-gradient;
+  padding-top: 53px;
+  padding-bottom: 36px;
+  color: $white;
+  font-family: $main-font;
+
+  &__navigation {
+    .separator {
+      border-bottom: 0.5px solid #ECECEC;
+      margin: 26px 0;
+    }
+  }
+}
