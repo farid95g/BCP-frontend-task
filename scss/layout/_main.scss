@@ -22,6 +22,26 @@
 
   // discount section
   &__discount {
-    
+    &--options {
+      right: 0;
+      top: 50%;
+      transform: translateY(-72px);
+
+      > div {
+        height: 72px;
+        width: 73px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.top {
+          border-top-left-radius: 29px;
+        }
+        &.bottom {
+          border-bottom-left-radius: 29px;
+        }
+      }
+    }
   }
 }
