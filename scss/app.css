@@ -484,4 +484,18 @@ button, button:focus {
 .main__newProducts .news-subscription .product-image {
   margin-top: 70px;
   text-align: center;
+}
+.main__decoratedProducts--items .images {
+  margin-bottom: 35px;
+}
+.main__decoratedProducts--items .images__item {
+  overflow: hidden;
+  cursor: pointer;
+}
+.main__decoratedProducts--items .images__item img {
+  width: 100%;
+  transition: transform 0.4s;
+}
+.main__decoratedProducts--items .images__item:hover img {
+  transform: scale(1.1);
 }/*# sourceMappingURL=app.css.map */
