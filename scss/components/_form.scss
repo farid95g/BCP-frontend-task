@@ -7,14 +7,23 @@
   &__primary {
     @include create-button($form-primary, $white, 39px, 152px, $smaller-fs, $light, rgba(44, 52, 62, 0.97));
   }
+  
+  &__subscription {
+    @include create-button($form-primary, #3A84CE, 46px, 89px, $smaller-fs, $normal, $white);
+  }
 }
 
 // input component
 .input {
   &__round {
-    border-radius: $form-round;
-    width: 100%;
-    height: 100%;
-    color: $white;
+    @include create-input($form-round, 100%, 100%, $white, 3.25rem, $light-blue, none);
+  }
+
+  &__subscription {
+    @include create-input($form-primary, 100%, 46px, $white, 14px, transparent, 1px solid #2F76C1);
+
+    &::placeholder {
+      color: $white !important;
+    }
   }
 }

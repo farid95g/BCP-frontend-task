@@ -39,6 +39,17 @@
   color: $color;
 }
 
+@mixin create-input($radius, $w, $h, $color, $indent, $bg, $border) {
+  border-radius: $radius;
+  width: $w;
+  height: $h;
+  color: $color;
+  text-indent: $indent;
+  background-color: $bg;
+  font-weight: $light;
+  border: $border;
+}
+
 
 // discount section offer and discount text styles
 @mixin discount-offer {
@@ -67,4 +78,17 @@
   font-weight: $bold;
   font-family: $main-font;
   font-size: $section-title-fs;
+}
+
+// new products section mixins
+@mixin news-subscription-header {
+  font-weight: $bold;
+  font-size: 35px;
+  color: #025BB3;
+}
+
+@mixin news-subscription-text {
+  font-size: 14px;
+  font-weight: $light;
+  color: $white;
 }

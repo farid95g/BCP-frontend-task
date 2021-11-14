@@ -49,4 +49,30 @@
   &__specialProducts {
     margin: 55px 0;
   }
+
+  // new products section
+  &__newProducts {
+    .news-subscription {
+      background: linear-gradient(180deg, rgba(56, 130, 203, 0.5) 0, rgba(179, 219, 255, 0.5) 100%);
+      backdrop-filter: blur(4px);
+      border-radius: 12px;
+      height: 624px;
+      font-family: $main-font;
+      padding: 40px 26px 50px 25px;
+
+      h2 {
+        @include news-subscription-header;
+      }
+
+      p {
+        @include news-subscription-text;
+        margin: 20px 0 12px 0 !important;
+      }
+
+      .product-image {
+        margin-top: 70px;
+        text-align: center;
+      }
+    }
+  }
 }
