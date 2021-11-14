@@ -1,0 +1,22 @@
+.main {
+  transform: translateY(-52.5px);
+  
+  // filter section styles
+  &__filter {
+    background-color: $white;
+    border-radius: 70px 70px 0 0;
+    height: 105px;
+
+    &--options {
+      li {
+        max-width: 150px;
+        text-align: center;
+        border-top: 1px solid #3387D6;
+
+        a {
+          @include filter-item-style;
+        }
+      }
+    }
+  }
+}

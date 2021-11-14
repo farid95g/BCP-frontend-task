@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 p, ul {
   margin-bottom: 0 !important;
 }
@@ -40,6 +44,10 @@ button, button:focus {
   width: 100%;
   height: 100%;
   color: #FFFFFF;
+}
+
+.wrapper {
+  padding: 0 100px;
 }
 
 .header {
@@ -119,6 +127,26 @@ button, button:focus {
   padding-right: 0;
 }
 
-.wrapper {
-  padding: 0 100px;
+.main {
+  transform: translateY(-52.5px);
+}
+.main__filter {
+  background-color: #FFFFFF;
+  border-radius: 70px 70px 0 0;
+  height: 105px;
+}
+.main__filter--options li {
+  max-width: 150px;
+  text-align: center;
+  border-top: 1px solid #3387D6;
+}
+.main__filter--options li a {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  color: #2C343E;
+  display: inline-block;
+  padding-top: 0.625rem;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=app.css.map */

@@ -1,7 +1,7 @@
 // top header mixins
 @mixin top-header-font {
   font-family: $main-font;
-  font-size: $small-fs;
+  font-size: $smaller-fs;
   font-weight: $light;
 }
 
@@ -11,4 +11,16 @@
   font-size: $normal-fs;
   font-weight: $bold;
   line-height: 17px;
+}
+
+// filter elements style
+@mixin filter-item-style {
+  font-size: $small-fs;
+  font-weight: $light;
+  font-family: $main-font;
+  color: $dark-gray;
+  display: inline-block;
+  padding-top: .625rem;
+  width: 100%;
+  height: 100%;
 }
