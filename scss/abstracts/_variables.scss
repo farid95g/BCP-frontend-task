@@ -4,6 +4,10 @@ $white: #FFFFFF;
 $blue-gradient: linear-gradient(101.48deg, #2D6DB7 -10.82%, #338CDB 79.4%, rgba(53, 149, 229, 0.87) 97.59%);
 $light-blue: rgba(173, 205, 236, 0.3);
 $dark-gray: #2C343E;
+$black: #000000;
+$aqua: #459BE4;
+$dark-blue: #2F75C0;
+
 
 // fonts
 $main-font: "Gilroy", sans-serif;
@@ -11,14 +15,20 @@ $main-font: "Gilroy", sans-serif;
 // font sizes
 $smaller-fs: .938rem;
 $small-fs: 1rem;
-$normal-fs: 1.25rem;
+$normal-fs: 1.125rem;
+$large-fs: 1.25rem;
+$card-h3: 2.813rem;
+$offer-text: 1.563rem;
+$discount-text: 3.75rem;
 
 // font weights
 $light: 400;
 $bold: 700;
+$bolder: 800;
 
 // spacing
 $header-padding: 100px;
 
 // border radiuses
 $form-round: 67px;
+$form-primary: 4px;

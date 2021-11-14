@@ -8,7 +8,7 @@
 // header navigation font
 @mixin header-nav-font {
   font-family: $main-font;
-  font-size: $normal-fs;
+  font-size: $large-fs;
   font-weight: $bold;
   line-height: 17px;
 }
@@ -23,4 +23,41 @@
   padding-top: .625rem;
   width: 100%;
   height: 100%;
+}
+
+
+// form elements mixins
+// mixin to create a button
+@mixin create-button($radius, $bg, $h, $w, $fs, $fw, $color) {
+  border-radius: $radius;
+  background-color: $bg;
+  height: $h;
+  width: $w;
+  font-family: $main-font;
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+
+// discount section offer and discount text styles
+@mixin discount-offer {
+  font-weight: $bold;
+  font-size: $offer-text;
+  font-family: $main-font;
+}
+
+@mixin discount-text {
+  font-weight: $bolder;
+  font-family: $main-font;
+  font-size: $discount-text;
+}
+
+@mixin link-font {
+  text-decoration: underline !important;
+  text-transform: lowercase;
+  font-size: $smaller-fs;
+  font-weight: $light;
+  font-family: $main-font;
+  line-height: 23px;
 }

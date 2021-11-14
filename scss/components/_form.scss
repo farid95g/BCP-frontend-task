@@ -1,10 +1,11 @@
 // button component
 .button {
   &__round {
-    border-radius: $form-round;
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 100%;
-    width: 178px;
+    @include create-button($form-round, rgba(255, 255, 255, 0.9), 100%, 178px, $normal-fs, $bold, #2F74BF);
+  }
+
+  &__primary {
+    @include create-button($form-primary, $white, 39px, 152px, $smaller-fs, $light, rgba(44, 52, 62, 0.97));
   }
 }
 

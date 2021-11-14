@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 p, ul {
@@ -37,6 +37,20 @@ button, button:focus {
   background-color: rgba(255, 255, 255, 0.9);
   height: 100%;
   width: 178px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2F74BF;
+}
+.button__primary {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  height: 39px;
+  width: 152px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 400;
+  color: rgba(44, 52, 62, 0.97);
 }
 
 .input__round {
@@ -46,8 +60,105 @@ button, button:focus {
   color: #FFFFFF;
 }
 
+.card__discount > div {
+  height: 100%;
+}
+.card__discount > div img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.card__discount--description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px !important;
+  color: #FFFFFF;
+}
+.card__discount--description h3 {
+  font-weight: 700;
+  font-size: 2.813rem;
+}
+.card__discount--description p {
+  margin: 20px 0 30px 0 !important;
+  font-weight: 400;
+  font-size: 0.938rem;
+}
+.card__discount--large {
+  width: 614px;
+  height: 698px;
+}
+.card__discount--small {
+  width: 50%;
+  min-width: 393px;
+  height: 349px;
+  padding: 25px 55px 30px 30px;
+  color: #FFFFFF;
+}
+.card__discount--small p.offer {
+  font-weight: 700;
+  font-size: 1.563rem;
+  font-family: "Gilroy", sans-serif;
+}
+.card__discount--small p.discount {
+  font-weight: 800;
+  font-family: "Gilroy", sans-serif;
+  font-size: 3.75rem;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.card__discount--small p.more-options {
+  font-weight: 700;
+  font-size: 1.563rem;
+  font-family: "Gilroy", sans-serif;
+  bottom: 55px;
+}
+.card__discount--small a {
+  text-decoration: underline !important;
+  text-transform: lowercase;
+  font-size: 0.938rem;
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  line-height: 23px;
+  bottom: 30px;
+}
+.card__discount--small.bg-light {
+  background-color: #459BE4 !important;
+}
+.card__discount--small.bg-dark {
+  background-color: #2F75C0 !important;
+}
+.card__discount--small.left p.discount {
+  text-align: right;
+  right: 55px;
+}
+.card__discount--small.right p.discount {
+  left: 30px;
+}
+.card__discount--small.right p.more-options {
+  padding-left: 2rem;
+  text-align: right;
+}
+.card__discount--small.right p.more-options, .card__discount--small.right a {
+  right: 55px;
+}
+
 .wrapper {
   padding: 0 100px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .header {
