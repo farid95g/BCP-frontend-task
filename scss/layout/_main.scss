@@ -100,4 +100,18 @@
       }
     }
   }
+
+  // road products section
+  &__roadProducts {
+    &--items {
+      .image {
+        height: 624px;
+        
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }

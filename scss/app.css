@@ -498,4 +498,11 @@ button, button:focus {
 }
 .main__decoratedProducts--items .images__item:hover img {
   transform: scale(1.1);
+}
+.main__roadProducts--items .image {
+  height: 624px;
+}
+.main__roadProducts--items .image img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=app.css.map */
