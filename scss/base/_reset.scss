@@ -1,0 +1,16 @@
+// resetting some default and bootstrap styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, ul {
+  margin-bottom: 0 !important;
+}
+
+// removing underline from anchor tags
+a, a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}

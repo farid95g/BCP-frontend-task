@@ -1,0 +1,32 @@
+.header {
+  &__top {
+    height: 54px;
+    background-color: $blue;
+
+    ul {
+      padding-right: 100px;
+
+      li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+        a {
+          @include top-header-font;
+          padding: 0 42.5px;
+        }
+
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

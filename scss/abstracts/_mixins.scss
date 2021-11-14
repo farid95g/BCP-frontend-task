@@ -1,0 +1,7 @@
+// top header mixins
+@mixin top-header-font {
+  font-family: $main-font;
+  font-size: $small-fs;
+  color: $white;
+  font-weight: $light;
+}

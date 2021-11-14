@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, ul {
+  margin-bottom: 0 !important;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./../../assets/fonts/Gilroy/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(./../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf);
+  font-weight: bold;
+}
+.header__top {
+  height: 54px;
+  background-color: #2F75C1;
+}
+.header__top ul {
+  padding-right: 100px;
+}
+.header__top ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__top ul li a {
+  font-family: "Gilroy", sans-serif;
+  font-size: 0.938rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 0 42.5px;
+}
+.header__top ul li:first-child a {
+  padding-left: 0;
+}
+.header__top ul li:last-child a {
+  padding-right: 0;
+}/*# sourceMappingURL=app.css.map */
