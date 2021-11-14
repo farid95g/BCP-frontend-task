@@ -192,10 +192,13 @@ button, button:focus {
 }
 .card__specialProduct {
   height: 340px;
-  padding: 1px;
-  margin-bottom: 20px;
-  background: linear-gradient(#2F74BF 100%, #4FA3E8 35%);
   border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 1px;
+  background: linear-gradient(#2F74BF 100%, #4FA3E8 35%);
+  background-color: none;
+  font-family: "Gilroy", sans-serif;
+  border: none;
 }
 .card__specialProduct > div {
   width: 100%;
@@ -221,11 +224,12 @@ button, button:focus {
 .card__newProduct {
   height: 302px;
   border-radius: 4px;
-  background-color: 600;
-  border: 1px solid #F1F1F1;
-  font-family: "Gilroy", sans-serif;
-  padding: 28px 23px 0 22px;
   margin-bottom: 20px;
+  padding: 28px 23px 0 22px;
+  background: none;
+  background-color: #FFFFFF;
+  font-family: "Gilroy", sans-serif;
+  border: 1px solid #F1F1F1;
 }
 .card__newProduct--img {
   text-align: center;
@@ -236,14 +240,12 @@ button, button:focus {
   color: rgba(44, 52, 62, 0.97);
 }
 .card__newProduct--description {
-  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #656667;
 }
 .card__newProduct--category {
-  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
@@ -260,14 +262,12 @@ button, button:focus {
   padding-left: 21px;
 }
 .card__newProduct--buy .price__current {
-  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 46px;
   color: rgba(44, 52, 62, 0.97);
 }
 .card__newProduct--buy .price__previous {
-  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 46px;
@@ -295,7 +295,6 @@ button, button:focus {
   width: 32px;
   background-image: url(./../../assets/icons/discount-percent.svg);
   background-repeat: no-repeat;
-  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 27px;
@@ -309,7 +308,7 @@ button, button:focus {
 .title {
   border-left: 2px solid #3679C2;
   padding-left: 10px;
-  margin-bottom: 25px;
+  margin: 70px 0 25px 0;
 }
 .title h1 {
   font-weight: 700;

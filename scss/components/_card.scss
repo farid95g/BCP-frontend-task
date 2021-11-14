@@ -102,11 +102,7 @@
 
   // special products card component
   &__specialProduct {
-    height: 340px;
-    padding: 1px;
-    margin-bottom: 20px;
-    background: linear-gradient(#2F74BF 100%, #4FA3E8 35%);
-    border-radius: 4px;
+    @include create-card(340px, 4px, 20px, 1px, linear-gradient(#2F74BF 100%, #4FA3E8 35%), none, none);
 
     > div {
       width: 100%;
@@ -140,13 +136,7 @@
 
   // new product card component
   &__newProduct {
-    height: 302px;
-    border-radius: 4px;
-    background-color: $normal;
-    border: 1px solid #F1F1F1;
-    font-family: $main-font;
-    padding: 28px 23px 0 22px;
-    margin-bottom: 20px;
+    @include create-card(302px, 4px, 20px, 28px 23px 0 22px, none, $white, 1px solid #F1F1F1);
 
     &--img {
       text-align: center;
@@ -159,7 +149,6 @@
     }
 
     &--description {
-      font-family: $main-font;
       font-weight: $light;
       font-size: 12px;
       line-height: 14px;
@@ -167,7 +156,6 @@
     }
 
     &--category {
-      font-family: $main-font;
       font-weight: $light;
       font-size: 10px;
       line-height: 16px;
@@ -186,7 +174,6 @@
 
       .price {
         &__current {
-          font-family: $main-font;
           font-weight: $bold;
           font-size: 20px;
           line-height: 46px;
@@ -194,7 +181,6 @@
         }
 
         &__previous {
-          font-family: $main-font;
           font-weight: $light;
           font-size: 13px;
           line-height: 46px;
@@ -227,7 +213,6 @@
           width: 32px;
           background-image: url(./../../assets/icons/discount-percent.svg);
           background-repeat: no-repeat;
-          font-family: $main-font;
           font-weight: $light;
           font-size: 12px;
           line-height: 27px;

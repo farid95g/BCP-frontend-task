@@ -92,3 +92,16 @@
   font-weight: $light;
   color: $white;
 }
+
+
+// mixin  to create a card component
+@mixin create-card($h, $radius, $mb, $pad, $bg, $bg-color, $border) {
+  height: $h;
+  border-radius: $radius;
+  margin-bottom: $mb;
+  padding: $pad;
+  background: $bg;
+  background-color: $bg-color;
+  font-family: $main-font;
+  border: $border;
+}
