@@ -700,6 +700,41 @@ button, button:focus {
   display: none;
 }
 
+.main__corellaProducts .filter__results .row > div {
+  padding: 10px;
+}
+
+.main__corellaProducts .filter__results .row > div > div {
+  height: 100%;
+}
+
+.main__corellaProducts .filter__results .top {
+  border-bottom: 1px solid #FFA800;
+  padding-top: 0 !important;
+}
+
+.main__corellaProducts .filter__results .left {
+  border-right: 1px solid #FFA800;
+  padding-left: 0 !important;
+}
+
+.main__corellaProducts .filter__results .left:first-child {
+  text-align: right;
+}
+
+.main__corellaProducts .filter__results .bottom {
+  padding-bottom: 0 !important;
+}
+
+.main__corellaProducts .filter__results .bottom img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__corellaProducts .filter__results .right {
+  padding-right: 0 !important;
+}
+
 .footer {
   background: linear-gradient(101.48deg, #2D6DB7 -10.82%, #338CDB 79.4%, rgba(53, 149, 229, 0.87) 97.59%);
   padding-top: 53px;

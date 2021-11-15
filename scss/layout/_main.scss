@@ -119,6 +119,7 @@
   &__corellaProducts {
     font-family: $main-font;
     .filter {
+      // filter options styles
       &__options {
         li {
           &:not(:last-child) {
@@ -162,6 +163,42 @@
               }
             }
           }
+        }
+      }
+
+      // filter results styles
+      &__results {
+        .row {
+          > div {
+            padding: 10px;
+
+            > div {
+              height: 100%;
+            }
+          }
+        }
+        .top {
+          border-bottom: 1px solid #FFA800;
+          padding-top: 0 !important;
+        }
+        .left {
+          border-right: 1px solid #FFA800;
+          padding-left: 0 !important;
+
+          &:first-child {
+            text-align: right;
+          }
+        }
+        .bottom {
+          padding-bottom: 0 !important;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .right {
+          padding-right: 0 !important;
         }
       }
     }
