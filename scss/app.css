@@ -27,12 +27,12 @@ button, button:focus {
 
 @font-face {
   font-family: "Gilroy";
-  src: url(./../../assets/fonts/Gilroy/Gilroy-Light.otf);
+  src: url(./../assets/fonts/Gilroy/Gilroy-Light.otf);
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url(./../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf);
+  src: url(./../assets/fonts/Gilroy/Gilroy-ExtraBold.otf);
   font-weight: bold;
 }
 
@@ -361,7 +361,7 @@ button, button:focus {
           justify-content: center;
   height: 49px;
   width: 32px;
-  background-image: url(./../../assets/icons/discount-percent.svg);
+  background-image: url(./../assets/icons/discount-percent.svg);
   background-repeat: no-repeat;
   font-weight: 400;
   font-size: 12px;
