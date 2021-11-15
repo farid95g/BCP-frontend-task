@@ -114,4 +114,56 @@
       }
     }
   }
+
+  // corella products section
+  &__corellaProducts {
+    font-family: $main-font;
+    .filter {
+      &__options {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 23px;
+          }
+
+          @for $i from 1 through length($filterListColours) {
+            &:nth-child(#{$i}) a::before {
+              border-color: map-get($filterListColours, $i)
+            }
+          }
+          
+          a {
+            font-weight: $normal;
+            font-size: $large-fs;
+            line-height: 27px;
+            color: $dark-gray;
+            display: flex;
+            align-items: center;
+            padding-left: 12px;
+            height: 40px;
+            position: relative;
+            border-radius: 4px;
+            transition: all .4s;
+
+            &::before {
+              content: '';
+              height: 40px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              border: 1px solid;
+            }
+
+            &.active, &:hover {
+              color:$white;
+              background-color: #FFA800;
+
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
